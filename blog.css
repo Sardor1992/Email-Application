@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.imgClass{
+    width: 600px;
+    height: 600px;
+}
+
+li{
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+header{
+    width: 100%;
+    background: #D2691E;
+    display: flex;
+}
+
+.header_logo{
+    text-transform: uppercase;
+    color: cornsilk;
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 48px;
+    margin-left: 10%;
+}
+
+nav{
+    margin-top: 48px;
+    margin-left: 45%;
+}
+
+.top_nav a{
+    color: white;
+    text-align: center;
+    padding: 17px 14px;
+    font-weight: bold;  
+    font-size: 14px;
+    
+}
+
+.top_nav a:hover{
+    border-bottom: 3px solid #7FFF00;
+}
+
+.top_nav .icon {
+    display: none;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .main_welcome{
+    background: #000;
+    text-align: center;
+    padding: 200px 0 300px 0;  
+}
+
+main .main_welcome p{
+    color: burlywood;
+    font-size: 22px;
+    font-family: 'Miniver', cursive;
+}
+
+main .main_welcome h1{
+    color: white;
+    font-size: 50px;
+}
+
+.main_welcome h1:after{
+    display: none;
+}
+
+.myBlog{
+    color: #FFD700;
+    font-family: 'Metal Mania', cursive;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+main .main_about{
+    display: flex;
+    padding: 100px 0 100px 250px;
+}
+
+main .about_right{
+    margin-left: 50px;
+}
+
+ .about_right h1{
+    display: inline-block;
+    border-bottom: 3px solid chocolate;
+    padding-bottom: 15px;
+}
+
+.about_right h1:after{
+    display: none;
+}
+
+.about_right p {
+    margin: 25px 0 40px 0;
+    color: gray;
+}
+
+.about_right li{
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.about_left{
+    margin: 10px 0 10px 0;
+
+}
+
+ .imgClass{
+     min-width:  50%;
+ }   
+
+ .blahBlah{
+     font-family: 'Caesar Dressing', cursive;
+     color: #D2691E;
+ }
+
+ .aboutMe{
+     font-family:  'Caesar Dressing', cursive;
+     font-style: bold;
+     color: yellow;
+ }
+
+
+
+@media screen and (max-width: 1200px){
+
+    nav{
+        margin-left: 50%;
+    }
+
+}
+@media screen and (max-width: 1105px){
+
+    nav{
+        margin-left: -25%;
+    }
+
+    main .about_left{
+        padding: 50px 0 50px 0;
+        margin-right: 70px;
+    }
+
+    main .about_right{
+        text-align: center;
+        margin-left: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 1010px){
+    .top_nav a{
+        display: none;
+    }
+
+    .top_nav a.icon{
+        float: right;
+        margin-top: 50px;
+        display: block;
+        color: #f2f2f2;
+        font-size: 25px;    
+    }
+    nav{
+        width: 100%;
+    }
+
+    .top_nav .responsive{
+        position: relative;
+        top: -10px;
+        left: -200px;
+    }
+
+    header .top_nav.responsive{
+        height: 340px;
+    }
+
+    .top_nav.responsive a.icon{
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+
+    .top_nav.responsive a{
+        
+        display: block;
+        text-align: left;
+        position: relative;
+        top: 120px;
+    }
+
+    main .about_left{
+        padding: 50px 0 50px 0;
+        margin-left: -150px;
+    }
+
+    main .about_right{
+        text-align: center;
+        padding: 0 350px 0 0;
+    }
+
+  }
+
+  @media screen and (max-width: 905px){
+    main .main_welcome{
+        padding: 50px 0 50px 0;
+    }
+    main .main_welcome p{
+        font-size: 14px;
+    }
+    main .main_welcome h1{
+        font-size: 24px;
+    }
+
+    .imgClass{
+        max-width: 100%;
+    }   
+
+    main .main_about{
+        flex-direction: column;
+    }
+
+     .about_right{
+        text-align: left;
+        margin-right: 100%;
+
+    }
+
+    .about_right li{
+        text-align: left;
+    }
+
+    .about_right h1{
+        font-size: 23px;
+    }
+
+
+    .appCards{
+        flex-direction: column;
+    }
+
+    .aboutBlog{
+        grid-template-columns: auto;
+    }
+
+    .aboutBlog .blogsInfo{
+        grid-template-columns: auto;
+    }
+
+    .ref{
+        grid-template-columns: auto;
+    }
+
+    .ref .allPart{
+        grid-template-columns: auto;
+        margin: 0 90px 0 70px;
+    }
+  }
+
+  h1:after{
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      padding-top: 30px;
+      border-bottom: 3px solid #fcac45;  
+      border-radius: 5px;
+  }
+
+  .myApps{
+    background: #000;
+    text-align: center;
+    padding: 100px 0 165px 0;
+    color: #ffffff;
+  }
+
+  .myApps h1{
+      font-size: 60px;
+      padding-bottom: 20px;
+  }
+
+  /*.Line{
+      width: 100px;
+      height: 3px;
+      background: #fcac45;
+      position: relative;
+      left: 46.5%;
+      margin-bottom: 105px;
+      border-radius: 150%;
+  }
+  */
+
+  .photo{
+      background: gray;
+      width: 140px;
+      height: 140px;
+      border-radius: 40px;
+      margin: 20px auto;
+  }
+
+  .appCards{
+      display: flex;
+  }
+
+  .card{
+      margin: 0 100px;
+  }
+
+  .name{
+      font-size: 25px;
+      margin-bottom: 10px;
+      font-family: 'Metal Mania';
+      color: #D2691E;
+  }
+
+  .position{
+      font-size: 18px;
+      margin-bottom: 40px;
+      font-family: 'Miniver', cursive;
+  }
+
+  .description{
+      font-size: 14px;
+      font-family: 'Coming Soon', cursive;
+  }
+
+   .infoBlog{
+      
+      font-size: 120px;
+      color: #7FFF00;
+     
+  }
+
+  .infoBlog h4{
+      font-size: 25px;
+      color: #000;
+  }
+
+  .infoBlog p{
+      font-size: 20px;
+      color: #000;
+  }
+
+  .blogsInfo{
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 10px;
+  }
+
+ .aboutBlog h1{
+     text-align: center;
+     padding: 100px 0 15px 0;
+ }
+
+ .aboutBlog p{
+     color: gray;
+     text-align-last: center;
+     margin-bottom: 100px;
+     padding: 0 20px 15px 50px;
+ }
+
+ .aboutBlog h4{
+     margin-top: 15px;
+     margin-bottom: 10px;
+ }
+
+ .ref{
+     background: #000;
+     text-align: center;
+     color: #ffffff;
+     padding: 100px 0 100px 0;
+ }
+
+ .ref h1{
+     margin-bottom: 20px;
+     font-size: 60px;
+ }
+
+ .allPart{
+     text-align: center;
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     grid-column-gap: 30px;
+     margin: 0 90px 0 220px;
+ }
+
+ .partners {
+     font-size: 50px;
+     margin-top: 40px;
+ }
+
+ .contactWrapper{
+     width: 750px;
+     margin: 0 auto;
+     margin-top: 150px;
+ }
+
+ .red{
+     color: red; 
+ }
+
+ input{
+     width: 360px;
+     height: 40px;
+     font-size: 20px;
+     margin-bottom: 35px;
+ }
+
+ .formInPut{
+     display: flex; 
+ }
+
+ textarea{
+     width: 100%;
+     height: 165px;
+ }
+
+ input, textarea{
+     border: 1px solid black;
+     margin-top: 15px;
+ }
+  
+ input:first-of-type{
+     margin-right: 20px;
+ }
+
+ .button{
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ input[type=submit]{
+     width: 165px;
+     height: 40px;
+     background-color: #fcac45;
+     color: #ffffff;
+     margin-right: 0;
+     margin-top: 20px;
+ }
+
+ .contactMe h1{
+    text-align: center;
+    margin-bottom: 30px;
+ }
+
+ .contactMe{
+     padding: 100px 0 100px 0;
+ }
+
+ form p{
+     text-align: left;
+ }
+
+    footer{
+     background-color: #000;
+     color: #ffffff;
+     height: auto;
+     padding: 0 30px 0 30px;
+     text-align: center;
+     font-size: 50px;
+    }
+
+ .netWorks{
+     font-size: 20px;
+     color: #D2691E;
+     vertical-align: 14px;
+     padding-right: 30px;
+     font-family: 'Caesar Dressing', cursive;
+     margin-right: 5px;
+ }
+  .netWorks:hover a{
+     color: #7FFF00;
+     cursor: pointer;
+ }
+
+ .netWorks a{
+    color: #D2691E;
+
+ }
+
+ /*.fa-facebook, .fa-instagram {
+    animation-name: anColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes anColor{
+    0%{
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+         
+    }
+
+    
+}
+
+*/
+
